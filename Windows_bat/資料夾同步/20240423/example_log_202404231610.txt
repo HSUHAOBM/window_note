@@ -1,0 +1,5 @@
+Log created on 2024/04/23 16:10:32 
+   REM æ·»å?ç©ºè?
+Some log message 1 
+Some log message 2 
+Some log message 3 
