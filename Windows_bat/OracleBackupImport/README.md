@@ -15,7 +15,7 @@
 ```
 OracleBackupImport/
 ├── bat/
-│   ├── auto_import.bat        # 主要匯入腳本
+│   ├── autoImport.bat        # 主要匯入腳本
 │   └── rebuild_user.sql       # 重建使用者腳本
 ├── db_backup_YYYYMMDD.dmp     # DMP 備份檔案
 ├── db_backup_YYYYMMDD.zip     # 壓縮備份檔案

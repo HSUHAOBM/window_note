@@ -107,7 +107,7 @@ powershell -NoProfile -Command "$body = @{ text = '成功從 NAS 取得 DMP 備�
 :: ==========================================
 
 :: 執行 SQL 腳本刪除舊使用者並重建新使用者 %TO_USER%
-sqlplus YOUR_DB_USER/YOUR_DB_PASSWORD@YOUR_DB_CONNECTION AS SYSDBA @rebuild_user.sql TARGET_USER
+sqlplus YOUR_DB_USER/YOUR_DB_PASSWORD@YOUR_DB_CONNECTION AS SYSDBA @rebuildUser.sql TARGET_USER
 if errorlevel 1 (
     echo 錯誤：使用者重建失敗
     :: 發送使用者重建失敗通知到 Slack
