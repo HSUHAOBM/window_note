@@ -1,0 +1,6 @@
+connect target YOUR_ORACLE_USER/YOUR_ORACLE_PASSWORD@YOUR_DATABASE_NAME
+run {
+    crosscheck archivelog all;
+    delete expired archivelog all;
+    delete noprompt archivelog until time 'SYSDATE-10/(24*60)';
+}
